@@ -28,7 +28,7 @@ class ApplicationController < Sinatra::Base
   end
   
   patch '/recipe/:id' do
-    
+    @recipe = Recipe.find
   end
   
 end
