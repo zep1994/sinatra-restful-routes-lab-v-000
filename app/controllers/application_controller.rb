@@ -13,6 +13,6 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/recipes' do
-    
+    @recipe = Recipe.create
   end
 end
